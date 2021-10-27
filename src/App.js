@@ -3,7 +3,7 @@ import Reducer from "./studies/Reducer";
 function App() {
   return (
     <div className="App">
-      <Reducer />
+      <Reducer userName="luna" />
     </div>
   );
 }
