@@ -1,5 +1,11 @@
+import Reducer from "./studies/Reducer";
+
 function App() {
-  return <div className="App">hello world</div>;
+  return (
+    <div className="App">
+      <Reducer />
+    </div>
+  );
 }
 
 export default App;
