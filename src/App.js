@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Memo />
       {/* <Reducer2 birthYear="2015" / */}
-      {/* <Reducer userName="luna" /> */}
+      <Reducer userName="luna" />
     </div>
   );
 }
