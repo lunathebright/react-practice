@@ -42,7 +42,6 @@ import withRequest from "./withRequest";
 // }
 
 function Post({ data }) {
-  console.log(data);
   return (
     <div>
       <div>
