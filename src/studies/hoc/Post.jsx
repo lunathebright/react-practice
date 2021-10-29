@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import withRequest from "./withRequest";
 
 // class Post extends Component {
@@ -44,14 +44,12 @@ import withRequest from "./withRequest";
 function Post({ data }) {
   return (
     <div>
-      <div>
-        {data.posts.map((post) => (
-          <>
-            <h1>{post.title}</h1>
-            <p>{post.contents}</p>
-          </>
-        ))}
-      </div>
+      {data.posts.map((post) => (
+        <>
+          <h1>{post.title}</h1>
+          <p>{post.contents}</p>
+        </>
+      ))}
     </div>
   );
 }
