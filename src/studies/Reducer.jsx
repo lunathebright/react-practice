@@ -42,6 +42,7 @@ import React, { useReducer } from "react";
 
 export default function Reducer() {
   const initialState = { count: 0 };
+  // state 값이 하나 뿐이고 단순할 때는 initialState를 별도로 지정하지 않고 useReducer에서 바로 넣어줘도 됨
 
   function reducer(state, action) {
     switch (action.type) {
