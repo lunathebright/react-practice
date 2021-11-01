@@ -13,9 +13,12 @@ function App() {
   return (
     <div className="App">
       <p>
-        Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).
+        Do not forget to buy <mark style={{ background: "pink" }}>milk</mark>{" "}
+        today.
       </p>
-
+      {/* <p>
+        Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).
+      </p> */}
       {/* <p>
         <dfn>HTML</dfn> is the standard markup language for creating web pages.
       </p>
