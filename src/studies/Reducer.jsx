@@ -58,6 +58,7 @@ export default function Reducer() {
   }
 
   const [state, dispatch] = useReducer(reducer, initialState);
+  // const [state, dispatch] = useReducer(reducer, 0)
 
   return (
     <div>

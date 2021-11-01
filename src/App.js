@@ -5,13 +5,20 @@
 // import Reducer from "./studies/Reducer";
 // import Reducer2 from "./studies/Reducer2";
 
-import Post from "./studies/hoc/Post";
+import { useState } from "react";
+
+// import Post from "./studies/hoc/Post";
 
 function App() {
   // const [isCountPage, setIsCountPage] = useState(true);
+  const [isDialogOn, setIsDialogOn] = useState(false);
   return (
     <div className="App">
-      <Post />
+      <button onClick={() => setIsDialogOn((prev) => !prev)}>button</button>
+      <dialog open={isDialogOn} style={{ border: "1px solid red" }}>
+        a
+      </dialog>
+      {/* <Post /> */}
       {/* {isCountPage ? <LifCycle /> : <div>component unmounted</div>} */}
       {/* <Memo /> */}
       {/* <Reducer2 birthYear="2015" / */}
