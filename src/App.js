@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import PortalParent from "./studies/PortalParent";
 // import LifCycle from "./studies/LifCycle";
 // import Memo from "./studies/Memo";
@@ -8,11 +8,14 @@
 
 function App() {
   // const [isCountPage, setIsCountPage] = useState(true);
-  // const [isDialogOn, setIsDialogOn] = useState(false);
+  const [isOn, setIsOn] = useState(false);
 
   return (
     <div className="App">
-      <details>
+      <p>
+        <dfn>HTML</dfn> is the standard markup language for creating web pages.
+      </p>
+      <details open={isOn}>
         <summary>Epcot Center</summary>
         <p>
           Epcot is a theme park at Walt Disney World Resort featuring exciting
