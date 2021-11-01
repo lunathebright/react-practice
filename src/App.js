@@ -12,7 +12,15 @@ function App() {
 
   return (
     <div className="App">
-      <ul>
+      <details>
+        <summary>Epcot Center</summary>
+        <p>
+          Epcot is a theme park at Walt Disney World Resort featuring exciting
+          attractions, international pavilions, award-winning fireworks and
+          seasonal special events.
+        </p>
+      </details>
+      {/* <ul>
         <li>
           User <bdi>hrefs</bdi>: 60 points
         </li>
@@ -22,7 +30,7 @@ function App() {
         <li>
           User <bdi>إيان</bdi>: 90 points
         </li>
-      </ul>
+      </ul> */}
       {/* <button onClick={() => setIsDialogOn((prev) => !prev)}>button</button>
       <dialog open={isDialogOn} style={{ border: "1px solid red" }}>
         a
