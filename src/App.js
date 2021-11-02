@@ -2,7 +2,8 @@ import { useState } from "react";
 // import PortalParent from "./studies/PortalParent";
 // import LifCycle from "./studies/LifCycle";
 // import Memo from "./studies/Memo";
-// import Reducer from "./studies/Reducer";
+import Reducer from "./studies/Reducer";
+import ReducerTest from "./studies/ReducerTest";
 // import Reducer2 from "./studies/Reducer2";
 // import Post from "./studies/hoc/Post";
 
@@ -12,10 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      <p>
+      {/* <p>
         Do not forget to buy <mark style={{ background: "pink" }}>milk</mark>{" "}
         today.
-      </p>
+      </p> */}
       {/* <p>
         Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).
       </p> */}
@@ -49,7 +50,8 @@ function App() {
       {/* {isCountPage ? <LifCycle /> : <div>component unmounted</div>} */}
       {/* <Memo /> */}
       {/* <Reducer2 birthYear="2015" / */}
-      {/* <Reducer userName="luna" /> */}
+      <Reducer userName="luna" />
+      <ReducerTest />
       {/* <button onClick={() => setIsCountPage((prev) => !prev)}>
         change page
       </button> */}

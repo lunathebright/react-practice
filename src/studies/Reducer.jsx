@@ -1,4 +1,5 @@
 import React, { useReducer } from "react";
+import reducer, { initialState } from "./reducer";
 
 // export default function Reducer({ userName }) {
 //   const initialState = { userName };
@@ -57,8 +58,9 @@ export default function Reducer() {
     }
   }
 
-  const [state, dispatch] = useReducer(reducer, initialState);
-  // const [state, dispatch] = useReducer(reducer, 0)
+  const [state, dispatch] = useReducer(reducer, 0);
+  // const [state, dispatch] = useReducer(reducer, initialState);
+  // useReducer를 분리해서 다른 컴포넌트에서 값을 사용해도 구독이 되어있는 구조가 아니기 때문에 실시간 업데이트 안 됨
 
   return (
     <div>
